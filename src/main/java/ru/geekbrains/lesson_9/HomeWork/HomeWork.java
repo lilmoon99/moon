@@ -34,11 +34,10 @@ public class HomeWork {
         int maxSize = 4;
         int sum = 0;
         int temp = 0;
-        for (int i = 0; i < array.length; i++) {
         if (array.length!= maxSize) throw new MyArraySizeException("Wrong array length.Need 4*4.");
-        for (int j = 0;j<array[i].length;j++){
+        for (int i = 0; i < array.length; i++) {
             if (array[i].length!= maxSize) throw new MyArraySizeException("Wrong array length.Need 4*4.");
-
+        for (int j = 0;j<array[i].length;j++){
             try {
                     temp = Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException exception){
