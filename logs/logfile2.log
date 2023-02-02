@@ -1,0 +1,8 @@
+DEBUG 2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:16 (LoggingExample.java:16) - Debug log
+INFO  2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:17 (LoggingExample.java:17) - InfoSome string log1453
+WARN  2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:18 (LoggingExample.java:18) - Warn log
+ERROR 2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:19 (LoggingExample.java:19) - Error log
+FATAL 2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:20 (LoggingExample.java:20) - Fatal log
+ERROR 2023-01-30 18:21:26 [main] ru.geekbrains.lesson_14.ClassWork.LoggingExample:26 (LoggingExample.java:26) - Throwing
+java.lang.RuntimeException: AAAAAAAAA
+	at ru.geekbrains.lesson_14.ClassWork.LoggingExample.main(LoggingExample.java:23) ~[classes/:?]

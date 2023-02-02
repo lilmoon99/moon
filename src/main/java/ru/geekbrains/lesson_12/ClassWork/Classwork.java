@@ -1,8 +1,6 @@
 package ru.geekbrains.lesson_12.ClassWork;
 
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.*;
@@ -174,7 +172,7 @@ public class Classwork {
         public MyThread() {
         }
 
-        public MyThread(@NotNull String name) {
+        public MyThread( String name) {
             super(name);
         }
 

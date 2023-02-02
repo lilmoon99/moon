@@ -1,0 +1,28 @@
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Properties>
+        <Property name="basePath">logs</Property>
+    </Properties>
+    <Appenders>
+        <File name="FILE1" fileName="logs/logfile1.log" append="true">
+            <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C:%L (%F:%L) - %m%n"/>
+        </File>
+        <File name="FILE2" fileName="${basePath}/logfile2.log" append="true">
+            <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C:%L (%F:%L) - %m%n"/>
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+<!--                         <PatternLayout pattern="%-5p %d{dd.MM.yy_HH:mm:ss} blah blah  [%t] %C:%L (%F:%L) - %m%n" />-->
+            <PatternLayout pattern="%-5p %d{dd.MM.yy_HH:mm:ss} [%t] -%m- (%F:%L) %n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FILE1"/>
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+        <Logger name="ru.geekbrains.lesson_14.ClassWork.LoggingExample" level="debug" additivity="false">
+            <AppenderRef ref="FILE2"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+<!--                 <Logger name="ru.geekbrains.logging.StableModule" level="error" />-->
+    </Loggers>
+</Configuration>

@@ -1,6 +1,12 @@
 package ru.geekbrains.lesson_5.Classwork;
 
+import lombok.Getter;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
+
 import java.time.Year;
+
 
 public class Cat {
     public static String TYPE = "Cat";
